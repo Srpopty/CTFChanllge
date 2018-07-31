@@ -1,0 +1,14 @@
+* Name:
+Lambda
+
+* Description:
+Orange will help you.
+
+* Resource
+http://123.206.86.208:25252
+
+* Flag:
+flag{An0nm0us_Func_1s_l4m6da}
+
+* Source:
+250

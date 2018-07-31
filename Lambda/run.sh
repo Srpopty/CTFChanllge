@@ -1,0 +1,1 @@
+docker build -t lambda:latest . && docker run -itd --name lambda -p 25252:80 lambda:latest

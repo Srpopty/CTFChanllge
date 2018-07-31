@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blue-Whale">
+    <meta name="author" content="No one">
+
+    <link href="/static/css/bootstrap.css" rel="stylesheet">
+    <link href="/static/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="/static/css/main.css" rel="stylesheet" id="bootstrap-css">
+
+    <style>
+        .welcome {
+            margin-top: 80px;
+        }
+
+        .collapse {
+            visibility: visible;
+            display: block;
+        }
+
+        #username,
+        #password {
+            height: 30px;
+        }
+
+        #verify {
+            margin-top: 5px;
+            height: 30px;
+            width: 30%;
+            display: inline-block;
+        }
+        
+        .verify {
+            color: rgb(173, 173, 173);
+            font-size: 14px;
+        }
+
+        .active {
+            margin-top: 5px;
+        }
+
+    </style>
+
+    <script src="/static/js/jquery-1.11.1.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script>
+        try {
+            Typekit.load({async: true});
+        } catch (e) {
+        }
+    </script>
+</head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="http://blue-whale.me/">blue-whale.me</a>
+            <div class="nav-collapse collapse nav-item">
+                <ul class="nav">
+                    <li class="active"><a href="/index.php">Home</a></li>
+                    <li class="active"><a href="/login.php">Login</a></li>
+                    <li class="active"><a href="/register.php">Register</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h1 class="welcome text-center">Welcome to <br> QCTF2018</h1>
+    <div class="card card-container">
+        <h2 class='login_title text-center'>Login</h2>
+        <hr>
+
+        <form class="form-signin" action="/login.php" method="post">
+            <span id="reauth-email" class="reauth-email"></span>
+            <p class="input_title">Username</p>
+            <input name="username" type="text" id="username" class="login_box" placeholder="Username" required autofocus>
+            <p class="input_title">Password</p>
+            <input name="password" type="password" id="password" class="login_box" placeholder="Password" required>
+            <span class="verify">substr(md5('</span><input name="verify" type="text" id="verify" class="login_box" placeholder="Verify" required><span class="verify">'),0,6) === '{{ verify }}'</span>
+            <button class="btn btn-lg btn-primary" type="submit">Login</button>
+        </form><!-- /form -->
+    </div><!-- /card-container -->
+    <footer>
+        <p>&copy; Blue-Whale 2018</p>
+    </footer>
+</div><!-- /container -->
+</body>

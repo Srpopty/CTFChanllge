@@ -1,0 +1,7 @@
+I love overflow and I know you have pass the Computer System Foundation course, so maybe this puzzle is very simple for you. You know how to do it right? Find the magic number!
+
+Hint:
+root@ubuntu:/# uname -a
+Linux ubuntu 3.16.0-4-amd64 #1 SMP Debian 3.16.36-1+deb8u2 (2016-10-19) x86_64 x86_64 x86_64 GNU/Linux
+
+flag{Wh4t_a_Mag1c_Numb3r}

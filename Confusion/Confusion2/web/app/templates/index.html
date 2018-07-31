@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blue-Whale">
+    <meta name="author" content="No one">
+
+    <link href="/static/css/bootstrap.css" rel="stylesheet">
+    <link href="/static/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="/static/css/main.css" rel="stylesheet" id="bootstrap-css">
+
+    <style>
+        .welcome {
+            margin-top: 80px;
+        }
+
+        .collapse {
+            visibility: visible;
+            display: block;
+        }
+
+        .active {
+            margin-top: 5px;
+        }
+
+        img {
+            width: 500px;
+            margin-left: 50%;
+            position: relative;
+            left: -250px;
+        }
+    </style>
+
+    <script src="/static/js/jquery-1.11.1.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script>
+        try {
+            Typekit.load({async: true});
+        } catch (e) {
+        }
+    </script>
+</head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="http://blue-whale.me/">blue-whale.me</a>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li class="active"><a href="/index.php">Home</a></li>
+                    <li class="active"><a href="/login.php">Login</a></li>
+                    <li class="active"><a href="/register.php">Register</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h1 class="welcome text-center">Welcome to QCTF2018</h1>
+    <img src="/static/img/PythonVsPhp.png" alt="Error happend!">
+    <footer>
+        <p>&copy; Blue-Whale 2018</p>
+    </footer>
+
+</div> <!-- /container -->
+
+
+</body>
+</html>
